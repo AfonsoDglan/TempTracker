@@ -3,9 +3,10 @@ from django.apps import AppConfig
 
 logger = logging.getLogger(__name__)
 
+
 class TemperatureConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'temperature'
+    name = 'temptracker.temperature'
 
     def ready(self):
         """

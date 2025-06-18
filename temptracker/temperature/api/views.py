@@ -1,10 +1,10 @@
 from rest_framework import generics
-from temperature.models import (TemperatureReading,
-                                Alert,
-                                MonitorSetting)
-from temperature.api.serializers import (MonitorSettingSerializer,
-                                         TemperatureReadingSerializer,
-                                         AlertSerializer)
+from ..models import (TemperatureReading,
+                      Alert,
+                      MonitorSetting)
+from .serializers import (MonitorSettingSerializer,
+                          TemperatureReadingSerializer,
+                          AlertSerializer)
 from datetime import timedelta
 from django.utils import timezone
 from django.shortcuts import get_object_or_404

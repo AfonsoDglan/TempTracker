@@ -1,9 +1,9 @@
 from django.urls import path
 from . import views
-from temperature.api.views import (MonitorSettingListCreateAPIView,
-                                   TemperatureReadingListAPIView,
-                                   AlertListCreateAPIView,
-                                   AlertConfirmView,)
+from temptracker.temperature.api.views import (MonitorSettingListCreateAPIView,
+                                               TemperatureReadingListAPIView,
+                                               AlertListCreateAPIView,
+                                               AlertConfirmView,)
 
 urlpatterns = [
     path('', views.monitor_status, name='monitor_status'),

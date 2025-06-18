@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from temperature.models import MonitorSetting, TemperatureReading, Alert
+from ..models import MonitorSetting, TemperatureReading, Alert
 
 
 class MonitorSettingSerializer(serializers.ModelSerializer):

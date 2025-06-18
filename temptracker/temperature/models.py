@@ -4,7 +4,7 @@ from apscheduler.schedulers.background import BackgroundScheduler
 from apscheduler.triggers.interval import IntervalTrigger
 import requests
 import logging
-from temperature.email import send_email_alert
+from .email import send_email_alert
 
 
 logger = logging.getLogger(__name__)

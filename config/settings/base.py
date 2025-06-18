@@ -24,7 +24,7 @@ DEBUG = env.bool("DJANGO_DEBUG", False)
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
 # though not all of them may be available with every OS.
 # In Windows, this must be set to your system time zone.
-TIME_ZONE = "America/Sao_Paulo"
+TIME_ZONE = "America/New_York"
 # https://docs.djangoproject.com/en/dev/ref/settings/#language-code
 LANGUAGE_CODE = "pt-br"
 # https://docs.djangoproject.com/en/dev/ref/settings/#languages
@@ -303,6 +303,6 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587  # Ou 465 para SSL
 EMAIL_USE_TLS = True  # Ou EMAIL_USE_SSL = True se estiver usando SSL
-EMAIL_HOST_USER = 'your_email@gmail.com'
-EMAIL_HOST_PASSWORD = 'your_chave_app'
-DEFAULT_FROM_EMAIL = 'your_email@gmail.com'
+EMAIL_HOST_USER = 'your'
+EMAIL_HOST_PASSWORD = 'ptxc jbft sjcu bghr'
+DEFAULT_FROM_EMAIL = 'dglan2003@gmail.com'
