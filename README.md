@@ -36,7 +36,7 @@ Licença: MIT
     * **Configuração de E-mail**: Para o envio de e-mails, é necessário configurar as seguintes variáveis no arquivo `config/settings/base.py` (ou em variáveis de ambiente, que é a prática recomendada para produção):
         ```python
         EMAIL_HOST_USER = 'your_email@gmail.com' # Altere para o seu e-mail
-        EMAIL_HOST_PASSWORD = 'your_app_password' # Altere para a sua chave de aplicativo/senha do e-mail
+        EMAIL_HOST_PASSWORD = 'your_app_password' # Altere para a sua chave de aplicativo/senha do e-mail: [help in](https://myaccount.google.com/apppasswords)
         DEFAULT_FROM_EMAIL = 'your_email@gmail.com' # Altere para o seu e-mail
         ```
 * **Docker & Docker Compose**: Contêinerização para fácil configuração, desenvolvimento e implantação em diferentes ambientes (local, produção, documentação).
@@ -81,13 +81,6 @@ Após iniciar o projeto localmente e criar um superusuário, você pode acessar 
 
 [http://localhost:8000/admin/](https://www.google.com/search?q=http://localhost:8000/admin/)
 
-### Configurando Seus Usuários
-
-  * **Conta de Usuário Normal**: Para criar uma **conta de usuário normal**, navegue até a página de Inscrição e preencha o formulário. Após o envio, você verá uma página "Verifique Seu Endereço de E-mail". Verifique seu console para uma mensagem de verificação de e-mail simulada e siga o link fornecido em seu navegador para verificar o endereço de e-mail do usuário.
-
-  * **Conta de Superusuário**: Para criar uma **conta de superusuário**, use o comando detalhado acima.
-
-    Para sua conveniência durante o desenvolvimento, você pode permanecer logado como um usuário normal em um navegador (ex: Chrome) e como um superusuário em outro (ex: Firefox) para observar facilmente o comportamento do site para ambos os tipos de usuário.
 
 ### Verificações de Tipo
 
