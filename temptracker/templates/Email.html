@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerta de Temperatura</title>
+    <style>
+        /* CSS Inlined para melhor compatibilidade com clientes de e-mail */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #d9534f; /* Vermelho para alerta */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        p {
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #333;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #5cb85c; /* Verde para confirmar */
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚨 Alerta de Temperatura Elevada!</h1>
+        
+        <p>Prezado(a) responsável,</p>
+        
+        <p>Uma temperatura elevada foi registrada na localidade <span class="highlight">{{ local }}</span>.</p>
+        
+        <p>
+            <strong>Temperatura Registrada:</strong> <span class="highlight">{{ temp}}°C</span><br>
+            <strong>Limite Definido:</strong> <span class="highlight">{{ temp_limit }}°C</span><br>
+            <strong>Data/Hora do Alerta:</strong> <span class="highlight">{{ data|date:"d/m/Y H:i:s" }}</span>
+        </p>
+        
+        <p>Por favor, verifique a situação e confirme a leitura deste alerta.</p>
+        
+        <div class="button-container">
+            <a href="http://localhost:8000/temperature/api/v1/alerts/confirm/{{id}}/" class="button">Confirmar Leitura do Alerta</a>
+        </div>
+        
+        <p class="footer">Este é um e-mail automático. Por favor, não responda.</p>
+    </div>
+</body>
+</html>
